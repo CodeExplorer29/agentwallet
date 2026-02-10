@@ -1,0 +1,6 @@
+{
+  "networks": [
+    { "name": "eip155:1", "rpcUrl": "https://mainnet.rpc.agentwallet.local" },
+    { "name": "eip155:11155111", "rpcUrl": "https://sepolia.rpc.agentwallet.local" }
+  ]
+}

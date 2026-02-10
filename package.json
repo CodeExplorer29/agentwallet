@@ -1,0 +1,43 @@
+{
+  "name": "agentwallet",
+  "version": "0.1.0",
+  "description": "Agent-friendly Ethereum wallet CLI with daemon mode",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "bin": {
+    "agentwallet": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/index.js",
+    "daemon": "npm run build && node dist/index.js --daemon",
+    "test": "echo \"No automated tests yet\" && exit 0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "assets",
+    "wallet.conf.json"
+  ],
+  "keywords": [
+    "ethereum",
+    "wallet",
+    "cli",
+    "agent"
+  ],
+  "author": "",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.13.5",
+    "commander": "^14.0.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
